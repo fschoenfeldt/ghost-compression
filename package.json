@@ -1,0 +1,31 @@
+{
+  "name": "ghost-image-compression",
+  "version": "1.0.0",
+  "description": "compress the images of your ghost blog",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fschoenfeldt/ghost-image-compression.git"
+  },
+  "keywords": [
+    "ghost",
+    "image-compression",
+    "minify",
+    "imagemin",
+    "pngquant"
+  ],
+  "author": "frederik schoenfeldt",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fschoenfeldt/ghost-image-compression/issues"
+  },
+  "homepage": "https://github.com/fschoenfeldt/ghost-image-compression#readme",
+  "dependencies": {
+    "imagemin": "^7.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "pngquant": "^3.0.0"
+  }
+}
