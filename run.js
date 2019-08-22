@@ -3,9 +3,13 @@
 // define controller to keep run.js clean
 const controller = require("./src/cli-controller.js");
 
-// function to handle user input, it needs 1-2 parameters to work
-const handleCliInput = (arg1, arg2) => {
-  controller.helloWorld(arg1);
+// grab user input with destructuring, saving it into args
+const [,, ...args] = process.argv;
+
+// function to handle user input, args is the array containing the arguments
+const handleCliInput = (args) => {
+  controller.pass(args);
 }
 
-handleCliInput(process.argv[2], process.argv[3]);
+// run the handleCliInput function with the entered args
+handleCliInput(args);
