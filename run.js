@@ -4,12 +4,12 @@
 const controller = require("./src/cli-controller.js");
 
 // grab user input with destructuring, saving it into args
-const [,, ...args] = process.argv;
+const [, , ...args] = process.argv;
 
 // function to handle user input, args is the array containing the arguments
 const handleCliInput = (args) => {
   controller.pass(args);
-}
+};
 
 // run the handleCliInput function with the entered args
 handleCliInput(args);
