@@ -7,8 +7,8 @@ const controller = require("./src/cli-controller.js");
 const [, , ...args] = process.argv;
 
 // function to handle user input, args is the array containing the arguments
-const handleCliInput = (args) => {
-  controller.pass(args);
+const handleCliInput = async (args) => {
+  await controller.pass(args);
 };
 
 // run the handleCliInput function with the entered args
